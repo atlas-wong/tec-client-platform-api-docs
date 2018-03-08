@@ -106,7 +106,7 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
     + items[][unitPrice]: (十进制数, 必须) - 单项SKU单价
     + items[][unitPriceCurrency]: (字串, 必须) - 货币单位, 使用ISO 4217标准
     + items[][CODValue]: (十进制数, 可选/必须) - 单项SKU COD货价(件数*COD单价). 如付款方式为COD, 此项必填. 使用当地货币
-      + items[][item_weight]: (十进制数, 可选/必须) - 单件物品重量
+    + items[][item_weight]: (十进制数, 可选/必须) - 单件物品重量
     + items[][item_vol_weight]:（十进制数, 可选/必须）- 单件物品体积重量
     + items[][item_length]:（十进制数, 可选/必须）- 单件物品长度
     + items[][item_width]:（十进制数, 可选/必须）- 单件物品长度
@@ -161,7 +161,14 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
                  "pieces": "2",
                  "unitPrice": "387",
                  "unitPriceCurrency": "THB",
-                 "CODValue": "774"
+                 "CODValue": "774",
+                 "item_weight": "11.11",
+                 "item_vol_weight": "12.12",
+                 "item_length": "50",
+                 "item_width": "40",
+                 "item_heigth": "30",
+                 "item_chargeable_weight": "12.11",
+                 "item_hts_code": "6103310000",
             },
             {
                  "sku": "sku-test-9876543210",
@@ -173,7 +180,14 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
                  "pieces": "1",
                  "unitPrice": "856",
                  "unitPriceCurrency": "THB",
-                 "CODValue": "856"
+                 "CODValue": "856",
+                 "item_weight": "13.13",
+                 "item_vol_weight": "14.42",
+                 "item_length": "45",
+                 "item_width": "38",
+                 "item_heigth": "40",
+                 "item_chargeable_weight": "13.56",
+                 "item_hts_code": "6103310001",
             }
         ]
       }
