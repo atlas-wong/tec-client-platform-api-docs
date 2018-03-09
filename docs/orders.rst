@@ -51,13 +51,13 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + items[][unitPrice]: (十进制数, 必须) - 单项SKU单价
     + items[][unitPriceCurrency]: (字串, 必须) - 货币单位, 使用ISO 4217标准
     + items[][CODValue]: (十进制数, 可选/必须) - 单项SKU COD货价(件数*COD单价). 如付款方式为COD, 此项必填. 使用当地货币
-    + items[][item_weight]: (十进制数, 可选/必须) - 单件物品重量
-    + items[][item_vol_weight]:（十进制数, 可选/必须）- 单件物品体积重量
-    + items[][item_length]:（十进制数, 可选/必须）- 单件物品长度
-    + items[][item_width]:（十进制数, 可选/必须）- 单件物品长度
-    + items[][item_heigth]:（十进制数, 可选/必须）- 单件物品长度
-    + items[][item_chargeable_weight]:（十进制数, 可选/必须）- 单件物品计费重量
-    + items[][item_hts_code]:（字串, 可选/必须）- 物品海关编码
+    + items[][ItemWeight]: (十进制数, 可选/必须) - 单件物品重量
+    + items[][ItemVolWeight]:（十进制数, 可选/必须）- 单件物品体积重量
+    + items[][ItemLength]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][ItemWidth]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][ItemHeigth]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][ItemChargeableWeight]:（十进制数, 可选/必须）- 单件物品计费重量
+    + items[][ItemHtsCode]:（字串, 可选/必须）- 物品海关编码
 
 建立订单(已有当地派送编号) [POST /orders/{trackingNumber}]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -106,13 +106,13 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
     + items[][unitPrice]: (十进制数, 必须) - 单项SKU单价
     + items[][unitPriceCurrency]: (字串, 必须) - 货币单位, 使用ISO 4217标准
     + items[][CODValue]: (十进制数, 可选/必须) - 单项SKU COD货价(件数*COD单价). 如付款方式为COD, 此项必填. 使用当地货币
-    + items[][item_weight]: (十进制数, 可选/必须) - 单件物品重量
-    + items[][item_vol_weight]:（十进制数, 可选/必须）- 单件物品体积重量
-    + items[][item_length]:（十进制数, 可选/必须）- 单件物品长度
-    + items[][item_width]:（十进制数, 可选/必须）- 单件物品长度
-    + items[][item_heigth]:（十进制数, 可选/必须）- 单件物品长度
-    + items[][item_chargeable_weight]:（十进制数, 可选/必须）- 单件物品计费重量
-    + items[][item_hts_code]:（字串, 可选/必须）- 物品海关编码
+    + items[][ItemWeight]: (十进制数, 可选/必须) - 单件物品重量
+    + items[][ItemVolWeight]:（十进制数, 可选/必须）- 单件物品体积重量
+    + items[][ItemLength]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][ItemWidth]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][ItemHeigth]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][ItemChargeableWeight]:（十进制数, 可选/必须）- 单件物品计费重量
+    + items[][ItemHtsCode]:（字串, 可选/必须）- 物品海关编码
 
 请求 (application/json)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -186,7 +186,7 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
                  "ItemLength": "45",
                  "ItemWidth": "38",
                  "ItemHeigth": "40",
-                 "ItemChargeable_weight": "13.56",
+                 "ItemChargeableWeight": "13.56",
                  "ItemHtsCode": "6103310001",
             }
         ]
