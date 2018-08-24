@@ -255,3 +255,56 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
                 "message": "Order not found",
                 "status_code": 404
             }
+
+
+追踪订单
+------------
+
+追踪订单 [GET /orders/track/{trackingNumber}]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+响应 200 (application/json)
+""""""""""""""""""""""""""""""""""
+
+订单存在
+
+.. code-block:: json
+
+            {
+              "status": 0,
+              "shipper_country": "China",
+              "consignee_country": "Thailand",
+              "results": [
+                {
+                  "type": "Pending Time",
+                  "timestamp": "2017-09-25 14:18:00",
+                  "message": "Delivery unsuccessful, pending for action"
+                },
+                {
+                  "type": "Close Box Time",
+                  "timestamp": "2017-09-13 05:46:10",
+                  "message": null
+                },
+                {
+                  "type": "Sort Out Time",
+                  "timestamp": "2017-09-13 05:45:43",
+                  "message": null
+                },
+                {
+                  "type": "Sort In Time",
+                  "timestamp": "2017-09-13 01:48:59",
+                  "message": null
+                },
+                {
+                  "type": "Upload Time",
+                  "timestamp": "2017-09-11 10:05:30",
+                  "message": null
+                }
+              ]
+            }
+            
+订单不存在
+
+.. code-block:: json
+
+            {"status":1,"message":"Order not found"}
