@@ -50,6 +50,13 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + items[][unitPrice]: (十进制数, 必须) - 单项SKU单价
     + items[][unitPriceCurrency]: (字串, 必须) - 货币单位, 使用ISO 4217标准
     + items[][CODValue]: (十进制数, 可选/必须) - 单项SKU COD货价(件数*COD单价). 如付款方式为COD, 此项必填. 使用当地货币
+    + items[][itemWeight]: (十进制数, 可选/必须) - 单件物品重量
+    + items[][itemVolWeight]:（十进制数, 可选/必须）- 单件物品体积重量
+    + items[][itemLength]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][itemWidth]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][itemHeigth]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][itemChargeableWeight]:（十进制数, 可选/必须）- 单件物品计费重量
+    + items[][itemHtsCode]:（字串, 可选/必须）- 物品海关编码
 
 建立订单(已有当地派送编号) [POST /orders/{trackingNumber}]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -97,6 +104,13 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
     + items[][unitPrice]: (十进制数, 必须) - 单项SKU单价
     + items[][unitPriceCurrency]: (字串, 必须) - 货币单位, 使用ISO 4217标准
     + items[][CODValue]: (十进制数, 可选/必须) - 单项SKU COD货价(件数*COD单价). 如付款方式为COD, 此项必填. 使用当地货币
+    + items[][itemWeight]: (十进制数, 可选/必须) - 单件物品重量
+    + items[][itemVolWeight]:（十进制数, 可选/必须）- 单件物品体积重量
+    + items[][itemLength]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][itemWidth]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][itemHeigth]:（十进制数, 可选/必须）- 单件物品长度
+    + items[][itemChargeableWeight]:（十进制数, 可选/必须）- 单件物品计费重量
+    + items[][itemHtsCode]:（字串, 可选/必须）- 物品海关编码
 
 请求 (application/json)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -144,7 +158,14 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
                  "pieces": "2",
                  "unitPrice": "387",
                  "unitPriceCurrency": "THB",
-                 "CODValue": "774"
+                 "CODValue": "774",
+                 "itemWeight": "11.11",
+                 "itemVolWeight": "12.12",
+                 "itemLength": "50",
+                 "itemWidth": "40",
+                 "itemHeigth": "30",
+                 "itemChargeableWeight": "12.11",
+                 "itemHtsCode": "6103310000",
             },
             {
                  "sku": "sku-test-9876543210",
@@ -156,7 +177,14 @@ Postman Collection: https://www.getpostman.com/collections/9f944b3d95d1324237d0
                  "pieces": "1",
                  "unitPrice": "856",
                  "unitPriceCurrency": "THB",
-                 "CODValue": "856"
+                 "CODValue": "856",
+                 "itemWeight": "13.13",
+                 "itemVolWeight": "14.42",
+                 "itemLength": "45",
+                 "itemWidth": "38",
+                 "itemHeigth": "40",
+                 "itemChargeableWeight": "13.56",
+                 "itemHtsCode": "6103310001",
             }
         ]
       }
